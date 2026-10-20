@@ -1,0 +1,164 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://digispher.online/#organization",
+      "name": "DigiSpher",
+      "url": "https://digispher.online",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digispher-products.digispher.online/assets/images/digispher-logo.png",
+        "caption": "DigiSpher Logo"
+      },
+      "description": "DigiSpher engineers offline-first desktop privacy tools, AI Search optimization (GEO) toolkits, and software monetization systems for complete digital ownership.",
+      "email": "info@digispher.online",
+      "telephone": "+21623400174",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tunis",
+        "addressCountry": "TN"
+      },
+      "sameAs": [
+        "https://digispher.online",
+        "https://digispher-products.digispher.online",
+        "https://dropspher.digispher.online",
+        "https://ds-emr.digispher.online",
+        "https://digispher.lemonsqueezy.com",
+        "https://digispher.gumroad.com"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "info@digispher.online",
+          "contactType": "customer support",
+          "availableLanguage": ["English", "French", "Arabic"]
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "digispher25@gmail.com",
+          "contactType": "technical support"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://digispher-products.digispher.online/#website",
+      "url": "https://digispher-products.digispher.online",
+      "name": "DigiSpher Products Suite",
+      "description": "Modern Software, AI Search Toolkits & Web Engineering for Complete Digital Ownership.",
+      "publisher": {
+        "@id": "https://digispher.online/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://digispher-products.digispher.online/geo-playbook.html#product",
+      "name": "Get Quoted: The GEO Playbook for Winning AI Search",
+      "description": "A comprehensive 41-page implementation system and SOP toolkit to get your brand mentioned, cited, and recommended by ChatGPT, Gemini, Perplexity, Copilot, and Google AI Overviews.",
+      "image": "https://digispher-products.digispher.online/assets/images/geo-playbook.jpg",
+      "url": "https://digispher-products.digispher.online/geo-playbook.html",
+      "brand": {
+        "@id": "https://digispher.online/#organization"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Starter Edition (Playbook Only)",
+          "price": "19.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://digispher.lemonsqueezy.com/checkout/buy/1b6c73ac-877a-4394-8571-4343fe139867?desc=0&discount=0"
+        },
+        {
+          "@type": "Offer",
+          "name": "Complete Implementation Toolkit",
+          "price": "59.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://digispher.lemonsqueezy.com/checkout/buy/a7720973-d173-4c37-8e57-c449dd772b04?desc=0&discount=0"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://digispher-products.digispher.online/ai-visibility-check.html#document",
+      "name": "Get Quoted: The 10-Minute AI Visibility Check (Free)",
+      "description": "Free 9-page guide with five starter prompts, a printable 0-40 scoring tracker, and five quick fixes for ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
+      "url": "https://digispher-products.digispher.online/ai-visibility-check.html",
+      "isAccessibleForFree": true,
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://digispher.online/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://digispher-products.digispher.online/software-pricing.html#product",
+      "name": "The Software Pricing Playbook",
+      "description": "Tactical pricing frameworks, tiered matrix design, and lifetime deal monetization strategies for software founders.",
+      "image": "https://digispher-products.digispher.online/assets/images/pricing-playbook.jpg",
+      "url": "https://digispher-products.digispher.online/software-pricing.html",
+      "brand": {
+        "@id": "https://digispher.online/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "49.99",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://digispher.lemonsqueezy.com/checkout/buy/07f94779-2062-4583-86ac-64832c6af1d7"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://digispher-products.digispher.online/dropspher.html#software",
+      "name": "DropSpher",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "ProductivityApplication",
+      "description": "100% offline desktop file powerhouse. Local PDF to Word converter, image batch processor, video compressor, and EXIF privacy scrubber with zero cloud uploads.",
+      "image": "https://digispher-products.digispher.online/assets/images/dropspher.jpg",
+      "url": "https://digispher-products.digispher.online/dropspher.html",
+      "sameAs": "https://dropspher.digispher.online",
+      "brand": {
+        "@id": "https://digispher.online/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "19.99",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://digispher.gumroad.com/l/dropspher"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://digispher-products.digispher.online/ds-emr.html#software",
+      "name": "DigiSpherEMR V2",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "MedicalBusinessApplication",
+      "description": "Offline-first clinic & electronic medical record practice management software with encrypted local database, appointment booking, and prescription generator.",
+      "image": "https://digispher-products.digispher.online/assets/images/ds-emr.jpg",
+      "url": "https://digispher-products.digispher.online/ds-emr.html",
+      "sameAs": "https://ds-emr.digispher.online",
+      "brand": {
+        "@id": "https://digispher.online/#organization"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "79.00",
+        "highPrice": "149.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://digispher.lemonsqueezy.com/checkout/buy/ea88e483-a889-4620-937e-963874151f57"
+      }
+    }
+  ]
+}

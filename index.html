@@ -24,6 +24,79 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- JSON-LD Structured Data: Organization & Product Catalog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://digispher.online/#organization",
+        "name": "DigiSpher",
+        "url": "https://digispher.online",
+        "logo": "https://digispher-products.digispher.online/assets/images/digispher-logo.png",
+        "description": "DigiSpher engineers offline-first desktop privacy tools, AI Search optimization (GEO) toolkits, and software monetization systems for complete digital ownership.",
+        "email": "info@digispher.online",
+        "telephone": "+21623400174",
+        "sameAs": [
+          "https://digispher.online",
+          "https://digispher-products.digispher.online",
+          "https://dropspher.digispher.online",
+          "https://ds-emr.digispher.online",
+          "https://digispher.lemonsqueezy.com",
+          "https://digispher.gumroad.com"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://digispher-products.digispher.online/#website",
+        "url": "https://digispher-products.digispher.online",
+        "name": "DigiSpher Products Suite",
+        "description": "Modern Software, AI Search Toolkits & Web Engineering for Complete Digital Ownership.",
+        "publisher": {
+          "@id": "https://digispher.online/#organization"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "name": "DigiSpher Product Suite",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "The Software Pricing Playbook",
+            "url": "https://digispher-products.digispher.online/software-pricing.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Get Quoted: The GEO Playbook for Winning AI Search",
+            "url": "https://digispher-products.digispher.online/geo-playbook.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Get Quoted: The 10-Minute AI Visibility Check (Free)",
+            "url": "https://digispher-products.digispher.online/ai-visibility-check.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "DropSpher 100% Offline Desktop Powerhouse",
+            "url": "https://digispher-products.digispher.online/dropspher.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "DigiSpherEMR V2 Practice Management",
+            "url": "https://digispher-products.digispher.online/ds-emr.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -357,6 +430,7 @@
           <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
             <li><a href="software-pricing.html" class="text-warning fw-bold">Pricing Playbook</a></li>
             <li><a href="geo-playbook.html" class="text-info fw-bold">GEO Playbook ($19.99)</a></li>
+            <li><a href="ai-visibility-check.html" class="text-light fw-bold">Free AI Check</a></li>
             <li><a href="dropspher.html">DropSpher App</a></li>
             <li><a href="ds-emr.html">DigiSpherEMR V2</a></li>
             <li><a href="agency-services.html">Agency Services</a></li>
@@ -366,9 +440,10 @@
         <div class="col-lg-2 col-6">
           <h5 class="text-white small fw-bold text-uppercase mb-3">Live Sites</h5>
           <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
-            <li><a href="https://digispher.online" target="_blank">digispher.online</a></li>
-            <li><a href="https://dropspher.digispher.online" target="_blank">dropspher.digispher.online</a></li>
-            <li><a href="https://ds-emr.digispher.online" target="_blank">ds-emr.digispher.online</a></li>
+            <li><a href="https://digispher-products.digispher.online" target="_blank">Products Suite</a></li>
+            <li><a href="https://digispher.online" target="_blank">DigiSpher Agency</a></li>
+            <li><a href="https://dropspher.digispher.online" target="_blank">DropSpher Live</a></li>
+            <li><a href="https://ds-emr.digispher.online" target="_blank">DS-EMR Live</a></li>
           </ul>
         </div>
 

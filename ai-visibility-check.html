@@ -25,6 +25,66 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/styles.css">
 
+  <!-- JSON-LD Structured Data: DigitalDocument & FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "DigitalDocument",
+        "@id": "https://digispher-products.digispher.online/ai-visibility-check.html#document",
+        "name": "Get Quoted: The 10-Minute AI Visibility Check (Free)",
+        "description": "Five starter prompts, a printable tracker, and five quick fixes to help ChatGPT, Gemini, Perplexity, and Google AI Overviews find, understand, and quote your brand.",
+        "url": "https://digispher-products.digispher.online/ai-visibility-check.html",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "DigiSpher",
+          "url": "https://digispher.online",
+          "logo": "https://digispher-products.digispher.online/assets/images/digispher-logo.png"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://digispher-products.digispher.online/ai-visibility-check.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does blocking Google-Extended remove my brand from Google AI Overviews?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Google-Extended is only used for training Gemini and Vertex AI models. Google AI Overviews use the standard Googlebot crawler. Blocking Googlebot removes your site from Google Search entirely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is adding an llms.txt file enough for AI search optimization?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. While llms.txt is useful for developer tools and markdown readers, major AI search engines crawl standard HTML and structured Schema.org markup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is the 10-minute AI visibility score calculated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You test five high-intent buyer prompts across ChatGPT, Gemini, Perplexity, and Google AI Overviews across two incognito sessions. Each mention gives 1 point per engine (20 points per run), giving you a repeatable score out of 40."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
     /* Specific styles for AI Visibility Check Landing Page */
     .optin-card {

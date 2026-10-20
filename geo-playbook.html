@@ -24,6 +24,79 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- JSON-LD Structured Data: Product & FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "@id": "https://digispher-products.digispher.online/geo-playbook.html#product",
+        "name": "Get Quoted: The GEO Playbook for Winning AI Search",
+        "description": "SEO gets you ranked on page 1. Generative Engine Optimization (GEO) forces ChatGPT, Gemini, Perplexity, and Google AI Overviews to cite, recommend, and defend your brand as the #1 answer.",
+        "image": "https://digispher-products.digispher.online/assets/images/geo-playbook.jpg",
+        "url": "https://digispher-products.digispher.online/geo-playbook.html",
+        "brand": {
+          "@type": "Organization",
+          "name": "DigiSpher",
+          "url": "https://digispher.online",
+          "logo": "https://digispher-products.digispher.online/assets/images/digispher-logo.png"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Starter Edition (Playbook Only)",
+            "price": "19.99",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "url": "https://digispher.lemonsqueezy.com/checkout/buy/1b6c73ac-877a-4394-8571-4343fe139867?desc=0&discount=0"
+          },
+          {
+            "@type": "Offer",
+            "name": "Complete Implementation Toolkit (Playbook + Working Files)",
+            "price": "59.99",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "url": "https://digispher.lemonsqueezy.com/checkout/buy/a7720973-d173-4c37-8e57-c449dd772b04?desc=0&discount=0"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://digispher.online/geo-playbook.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between SEO and GEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Traditional SEO focuses on keyword rankings and backlinks to win clicks across ten blue links on Google. Generative Engine Optimization (GEO) focuses on semantic entity authority, BLUF formatting, and citation consensus so LLMs like ChatGPT, Perplexity, and Gemini synthesize and recommend your brand in direct AI answers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does blocking Google-Extended remove my site from Google AI Overviews?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Google-Extended only controls foundation training for Gemini and Vertex AI models. Google AI Overviews use the standard Googlebot crawler. Blocking Googlebot removes your site from Google Search entirely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which AI search bots should be allowed in robots.txt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To be cited in live generative search answers, never disallow OAI-SearchBot, ChatGPT-User, PerplexityBot, Perplexity-User, Claude-SearchBot, Claude-User, Googlebot, or Bingbot in your robots.txt file."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -921,6 +994,7 @@ Sitemap: https://www.yourdomain.com/sitemap.xml</code></pre>
           <h5 class="text-white small fw-bold text-uppercase mb-3">Products</h5>
           <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
             <li><a href="geo-playbook.html" class="text-info fw-bold">GEO Playbook</a></li>
+            <li><a href="ai-visibility-check.html" class="text-white fw-bold">Free AI Check</a></li>
             <li><a href="dropspher.html">DropSpher App</a></li>
             <li><a href="ds-emr.html">DigiSpherEMR V2</a></li>
             <li><a href="agency-services.html">Agency Services</a></li>
@@ -930,10 +1004,10 @@ Sitemap: https://www.yourdomain.com/sitemap.xml</code></pre>
         <div class="col-lg-2 col-6">
           <h5 class="text-white small fw-bold text-uppercase mb-3">Resources</h5>
           <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="https://digispher-products.digispher.online" target="_blank">Products Suite</a></li>
             <li><a href="https://digispher.online" target="_blank">DigiSpher Agency</a></li>
             <li><a href="https://dropspher.digispher.online" target="_blank">DropSpher Live</a></li>
             <li><a href="https://ds-emr.digispher.online" target="_blank">DS-EMR Live</a></li>
-            <li><a href="#preview">Sample Inspector</a></li>
           </ul>
         </div>
 

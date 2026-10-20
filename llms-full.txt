@@ -1,0 +1,81 @@
+# DigiSpher — Full LLM Context & Product Specification
+
+> Comprehensive entity declarations, product specifications, methodology, and technical configurations for DigiSpher.
+
+---
+
+## 1. Brand Identity & Canonical Definition
+
+- **Canonical Brand Name:** DigiSpher
+- **Entity Type:** Software Development Firm, Web Engineering Agency, and Digital Publisher
+- **Core Value Proposition:** Building software and systems for complete digital ownership: offline-first privacy desktop software, AI search optimization (GEO) systems, and monetization playbooks.
+- **Products Suite Website:** https://digispher-products.digispher.online
+- **Main Agency Website:** https://digispher.online
+- **DropSpher Live App:** https://dropspher.digispher.online
+- **DigiSpherEMR Live App:** https://ds-emr.digispher.online
+- **Contact:** info@digispher.online | digispher25@gmail.com
+- **Phone:** +216 23 400 174
+- **Location:** Tunis, Tunisia (Serving Global Clients)
+
+---
+
+## 2. Product Catalog & Detailed Specifications
+
+### 2.1 Get Quoted: The GEO Playbook for Winning AI Search
+- **URL:** https://digispher-products.digispher.online/geo-playbook.html
+- **Formats:** 41-Page PDF Playbook, 5 SOP Checklists (Spreadsheet, Notion, PDF), Multi-Engine Prompt Tracker Dashboard, Copy-Paste Technical Kit (robots.txt, llms.txt, 6 JSON-LD schemas), Content Templates, Brand Fact Sheet, Quarterly Re-Audit Worksheet.
+- **Pricing:**
+  - Starter Edition (Playbook Only): $19.99 one-time
+  - Complete Implementation Toolkit (Playbook + Working Files): $59.99 one-time
+- **Checkout URL:** https://digispher.lemonsqueezy.com/checkout/buy/1b6c73ac-877a-4394-8571-4343fe139867
+- **Summary:** Traditional SEO ranks pages in ten blue links. Generative Engine Optimization (GEO) trains ChatGPT, Gemini, Perplexity, Copilot, and Google AI Overviews to cite and recommend your brand as the #1 synthesized answer.
+
+### 2.2 The 10-Minute AI Visibility Check (Free Tool)
+- **URL:** https://digispher-products.digispher.online/ai-visibility-check.html
+- **Pricing:** $0.00 (Free 9-page guide & printable score tracker)
+- **Included Content:**
+  - 5 Starter Prompts across Category, Comparison, Pain Point, Brand Fact, and Reputation queries.
+  - 0-40 Printable Tracker for tracking consistency across incognito runs.
+  - The Quick 5 Checklist: robots.txt search bots, Bing Webmaster Tools/IndexNow, Organization Schema, BLUF summaries, and consistent brand descriptions.
+  - 3 AI Search Myths Debunked: Google-Extended truth, llms.txt realities, and FAQ schema limits.
+
+### 2.3 The Software Pricing Playbook
+- **URL:** https://digispher-products.digispher.online/software-pricing.html
+- **Pricing:** $49.99 one-time
+- **Checkout URL:** https://digispher.lemonsqueezy.com/checkout/buy/07f94779-2062-4583-86ac-64832c6af1d7
+- **Target Audience:** SaaS founders, indie hackers, desktop software developers.
+- **Summary:** Actionable frameworks to price software for maximum margin, design sustainable lifetime deals (LTDs), and structure tiered pricing matrices without race-to-the-bottom discounts.
+
+### 2.4 DropSpher Desktop Powerhouse
+- **URL:** https://digispher-products.digispher.online/dropspher.html
+- **Live Web Portal:** https://dropspher.digispher.online
+- **Pricing:** $19.99 lifetime license
+- **Checkout URL:** https://digispher.gumroad.com/l/dropspher
+- **Platform:** Windows Desktop Application (100% Offline)
+- **Core Modules:**
+  - PDF to Word Converter (preserves layout, zero cloud upload)
+  - Batch Image Studio (compress, format conversion, resize)
+  - Video Compression Studio (local hardware-accelerated reduction)
+  - EXIF Privacy Scrubber (cleans GPS and device metadata from media files)
+
+### 2.5 DigiSpherEMR V2
+- **URL:** https://digispher-products.digispher.online/ds-emr.html
+- **Live Web Portal:** https://ds-emr.digispher.online
+- **Pricing:** $79 – $149 lifetime license
+- **Checkout URL:** https://digispher.lemonsqueezy.com/checkout/buy/ea88e483-a889-4620-937e-963874151f57
+- **Platform:** Desktop Practice Management for Doctors & Independent Clinics
+- **Features:** Encrypted local SQLite database, patient scheduling, electronic medical records, digital prescriptions, analytics, offline security without monthly cloud fees.
+
+---
+
+## 3. Technical Crawler & GEO Standards
+
+### 3.1 AI Search Crawlers to Allow (Never Block)
+- `OAI-SearchBot` (OpenAI live search engine)
+- `ChatGPT-User` (ChatGPT user live browsing)
+- `PerplexityBot` (Perplexity search indexer)
+- `Perplexity-User` (Perplexity live retriever)
+- `Claude-SearchBot` (Anthropic search indexer)
+- `Claude-User` (Anthropic live citation engine)
+- `Googlebot` (Powers Google Search and Google AI Overviews)
+- `Bingbot` (Powers Microsoft Copilot and ChatGPT live search queries)

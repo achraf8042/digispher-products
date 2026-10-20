@@ -1,0 +1,95 @@
+# ==============================================================================
+# DigiSpher Products - Official robots.txt
+# Built in accordance with verified Generative Engine Optimization (GEO) protocols.
+# Production Host: https://digispher-products.digispher.online
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Classic Search Engines (Google, Bing)
+# ------------------------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# ------------------------------------------------------------------------------
+# 2. AI Search Crawlers & User-Directed Live Fetchers
+# CRITICAL: Allow these to ensure your brand is cited and recommended in live AI answers
+# ------------------------------------------------------------------------------
+# OpenAI (SearchGPT & ChatGPT browsing)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI (Live search & citation index)
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic Claude (Live search & citation retrieval)
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI & Llama Search
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Cohere Live Retrieval
+User-agent: cohere-ai
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# ------------------------------------------------------------------------------
+# 3. Model-Training Crawlers (Optional)
+# ------------------------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Google-Extended controls Gemini/Vertex training (does NOT affect AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# ------------------------------------------------------------------------------
+# 4. Global Rules
+# ------------------------------------------------------------------------------
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /temp/
+
+# ------------------------------------------------------------------------------
+# 5. Sitemaps & LLM Discovery Files
+# ------------------------------------------------------------------------------
+Sitemap: https://digispher-products.digispher.online/sitemap.xml
+# LLM Context File: https://digispher-products.digispher.online/llms.txt
+# Full LLM Documentation: https://digispher-products.digispher.online/llms-full.txt

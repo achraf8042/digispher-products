@@ -1,0 +1,38 @@
+# DigiSpher Products
+
+> DigiSpher engineers offline-first desktop privacy tools, Generative Engine Optimization (GEO) implementation toolkits, and software monetization systems for complete digital ownership.
+
+DigiSpher provides battle-tested toolkits, playbooks, and desktop software designed for founders, marketers, and developers who refuse to rent their core digital capabilities. Our systems prioritize local execution, verified documentation, and machine-readable transparency.
+
+## Core Products & Toolkits
+
+- [Get Quoted: The GEO Playbook for Winning AI Search](https://digispher-products.digispher.online/geo-playbook.html): A 41-page implementation guide and SOP toolkit for optimizing brands to be cited and recommended by ChatGPT, Gemini, Perplexity, Copilot, and Google AI Overviews. Includes 5 operational checklists, prompt tracker spreadsheet, and copy-paste bot/schema configurations.
+- [The 10-Minute AI Visibility Check](https://digispher-products.digispher.online/ai-visibility-check.html): Free 9-page guide with 5 starter prompts, a 0-40 scoring tracker, and 5 foundational fixes for AI search. Helps businesses audit whether AI engines cite their brand or competitors.
+- [The Software Pricing Playbook](https://digispher-products.digispher.online/software-pricing.html): Strategic pricing frameworks, lifetime-deal monetization models, and margin optimization for software founders and indie hackers.
+- [DropSpher Desktop App](https://digispher-products.digispher.online/dropspher.html): 100% offline desktop file powerhouse. Converts PDF to Word locally with formatting retention, batch processes images and videos, and scrubs EXIF metadata with zero cloud uploads. Live app portal: https://dropspher.digispher.online
+- [DigiSpherEMR V2](https://digispher-products.digispher.online/ds-emr.html): Offline-first medical practice management system with encrypted local SQLite storage, appointment scheduling, and prescription generation for independent healthcare providers. Live app portal: https://ds-emr.digispher.online
+- [DigiSpher Agency & Web Services](https://digispher-products.digispher.online/agency-services.html): Bespoke web architecture, full-stack application engineering, and technical GEO implementation. Main agency site: https://digispher.online
+
+## Ecosystem Properties & Live Domains
+
+- DigiSpher Products (Current Site): https://digispher-products.digispher.online
+- DigiSpher Main Agency: https://digispher.online
+- DropSpher Live Portal: https://dropspher.digispher.online
+- DigiSpherEMR Live Portal: https://ds-emr.digispher.online
+
+## Organization & Contact Information
+
+- Entity Name: DigiSpher
+- Industry: Software Engineering, Digital Publishing, Generative Engine Optimization
+- Official Website: https://digispher-products.digispher.online
+- Main Agency Portal: https://digispher.online
+- Headquarters: Tunis, Tunisia (Global Operations)
+- Primary Contact Email: info@digispher.online
+- Support Email: digispher25@gmail.com
+- Phone: +216 23 400 174
+- Checkout Providers: Lemon Squeezy (Merchant of Record) & Gumroad
+
+## Machine-Readable Resources
+
+- [Robots Policy](https://digispher-products.digispher.online/robots.txt): Official crawler access directives allowing live AI search engines while managing training bots.
+- [Extended Context](https://digispher-products.digispher.online/llms-full.txt): Deep chapter outlines, prompt examples, and full entity declarations.
