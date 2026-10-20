@@ -235,6 +235,20 @@ p.fs-5 {
   gap: 0.65rem;
 }
 
+.brand-logo {
+  height: 40px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.15s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.02);
+}
+
 .navbar-brand .bi {
   display: inline-flex;
   align-items: center;

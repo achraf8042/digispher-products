@@ -31,8 +31,7 @@
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <i class="bi bi-cpu-fill text-info"></i>
-        <span>DigiSpher</span>
+        <img src="assets/images/digispher-logo.png" alt="DigiSpher" class="brand-logo" height="40">
         <span class="brand-badge bg-primary">Agency</span>
       </a>
       <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -467,23 +466,27 @@
             <p class="text-muted small mb-4">
               Tell us about your project, current website, or digital goals. We will reply within 24 hours.
             </p>
-            <form onsubmit="alert('Thank you! Your inquiry has been sent to DigiSpher. We will contact you within 24 hours.'); return false;">
+            <form name="agency-proposal" method="POST" data-netlify="true" netlify data-netlify-honeypot="bot-field" onsubmit="alert('Thank you! Your inquiry has been sent to DigiSpher. We will contact you within 24 hours.');">
+              <input type="hidden" name="form-name" value="agency-proposal">
+              <p class="d-none">
+                <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+              </p>
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label text-secondary small fw-bold">Your Name</label>
-                  <input type="text" class="form-control bg-dark text-white border-secondary border-opacity-25" placeholder="John Doe" required>
+                  <input type="text" name="name" class="form-control bg-dark text-white border-secondary border-opacity-25" placeholder="John Doe" required>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label text-secondary small fw-bold">Your Email</label>
-                  <input type="email" class="form-control bg-dark text-white border-secondary border-opacity-25" placeholder="john@example.com" required>
+                  <input type="email" name="email" class="form-control bg-dark text-white border-secondary border-opacity-25" placeholder="john@example.com" required>
                 </div>
                 <div class="col-12">
                   <label class="form-label text-secondary small fw-bold">Current Website URL (if any)</label>
-                  <input type="url" class="form-control bg-dark text-white border-secondary border-opacity-25" placeholder="https://example.com">
+                  <input type="url" name="website" class="form-control bg-dark text-white border-secondary border-opacity-25" placeholder="https://example.com">
                 </div>
                 <div class="col-12">
                   <label class="form-label text-secondary small fw-bold">Project Details or Goals</label>
-                  <textarea class="form-control bg-dark text-white border-secondary border-opacity-25" rows="4" placeholder="Tell us what you'd like to achieve..."></textarea>
+                  <textarea name="details" class="form-control bg-dark text-white border-secondary border-opacity-25" rows="4" placeholder="Tell us what you'd like to achieve..."></textarea>
                 </div>
                 <div class="col-12 mt-4">
                   <button type="submit" class="btn btn-ds-primary w-100 py-3">

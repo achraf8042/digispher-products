@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Quoted: The 10-Minute AI Visibility Check (Free) | DigiSpher</title>
+  <meta name="description" content="Does ChatGPT recommend you, or your competitor? Get the free 10-Minute AI Visibility Check: five starter prompts, a printable tracker, and five quick fixes for ChatGPT, Gemini, Perplexity, and Google AI Overviews.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Get Quoted: The 10-Minute AI Visibility Check (Free)">
+  <meta property="og:description" content="Run 5 starter prompts across 4 AI engines with a simple 0-40 score. Free 9-page guide & printable tracker from DigiSpher.">
+  <meta property="og:image" content="assets/images/geo-playbook.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Instrument Serif & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons & Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    /* Specific styles for AI Visibility Check Landing Page */
+    .optin-card {
+      background: #ffffff;
+      border: 1px solid var(--ds-border-strong);
+      border-radius: var(--radius);
+      padding: 2.25rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      position: relative;
+    }
+
+    .optin-card .form-control {
+      border: 1px solid var(--ds-border-strong);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      font-size: 0.95rem;
+      color: var(--ds-text);
+      background-color: #fafbfc;
+      transition: all 0.15s ease;
+    }
+
+    .optin-card .form-control:focus {
+      background-color: #ffffff;
+      border-color: var(--ds-primary);
+      box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+    }
+
+    .benefit-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+
+    .benefit-icon {
+      flex-shrink: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 8px;
+      background: #f5f6f7;
+      border: 1px solid var(--ds-border-strong);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ds-primary);
+      font-size: 1.1rem;
+    }
+
+    .score-simulator {
+      background: #fafbfc;
+      border: 1px solid var(--ds-border);
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
+
+    .engine-pill {
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--ds-border);
+      background: #ffffff;
+      cursor: pointer;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.15s ease;
+    }
+
+    .engine-pill:hover {
+      border-color: var(--ds-primary);
+    }
+
+    .engine-pill.checked {
+      background: #1d4ed8;
+      color: #ffffff;
+      border-color: #1d4ed8;
+    }
+
+    .tracker-card {
+      background: #ffffff;
+      border: 1px solid var(--ds-border);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      transition: border-color 0.15s ease;
+    }
+
+    .tracker-card:hover {
+      border-color: var(--ds-border-strong);
+    }
+
+    .myth-card {
+      background: #ffffff;
+      border: 1px solid var(--ds-border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      height: 100%;
+    }
+
+    .thank-you-view {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .thank-you-view.active {
+      display: block;
+    }
+
+    .step-number {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--ds-primary);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.88rem;
+      flex-shrink: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announce-bar">
+    <span class="badge bg-dark text-info me-2">FREE RESOURCE</span>
+    Get Quoted: The 10-Minute AI Visibility Check (9-Page Guide & Printable Score Tracker)
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/digispher-logo.png" alt="DigiSpher" class="brand-logo" height="40">
+        <span class="brand-badge">Free Toolkit</span>
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#optin">Get the Check</a></li>
+          <li class="nav-item"><a class="nav-link" href="#whats-inside">What's Inside</a></li>
+          <li class="nav-item"><a class="nav-link" href="#simulator">Score Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quick-5">Quick 5 Fixes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#myths">AI Myths</a></li>
+          <li class="nav-item"><a class="nav-link" href="geo-playbook.html">Full GEO Playbook</a></li>
+          <li class="nav-item ms-lg-3">
+            <a href="#optin" class="btn btn-sm btn-ds-primary">
+              <i class="fa-solid fa-download me-1"></i> Free Download
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       HERO & OPT-IN SECTION
+       ========================================================================= -->
+  <header class="hero-section py-5 my-lg-4 position-relative" id="optin">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-5">
+        
+        <!-- Left Column: Copy -->
+        <div class="col-lg-7">
+          <div class="d-inline-flex mb-3">
+            <span class="badge-pill-soft">
+              <i class="bi bi-search-heart"></i> Generative Engine Optimization · Free Check
+            </span>
+          </div>
+
+          <h1 class="hero-headline mb-4">
+            Does ChatGPT recommend you, <br>
+            <span class="gradient-text">or your competitor?</span>
+          </h1>
+
+          <p class="lead text-light mb-4">
+            Get the free <strong>10-Minute AI Visibility Check</strong>: five starter prompts, a printable tracker, and five quick fixes to help ChatGPT, Gemini, Perplexity and Google AI Overviews find, understand and quote your brand.
+          </p>
+
+          <!-- Core Bullets from landing-copy.md -->
+          <div class="pe-lg-3 mt-4">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-1">See where you stand</h3>
+                <p class="small text-muted mb-0">
+                  Run 5 starter prompts across 4 AI engines with a simple 0-40 score, no tools needed.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-1">Fix what blocks you</h3>
+                <p class="small text-muted mb-0">
+                  A Quick 5 checklist covering the right AI search bots in robots.txt, Bing Webmaster Tools, Organization schema, BLUF summaries, and one consistent brand description.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-1">Skip the myths</h3>
+                <p class="small text-muted mb-0">
+                  Three common claims about Google-Extended, llms.txt, and FAQ schema, checked against Google's own documentation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick badges -->
+          <div class="d-flex flex-wrap gap-4 pt-3 border-top border-secondary border-opacity-25 mt-4 text-muted small">
+            <div><i class="bi bi-file-earmark-pdf text-info me-1"></i> Free 9-Page PDF</div>
+            <div><i class="bi bi-printer text-info me-1"></i> Printable Mini Tracker</div>
+            <div><i class="bi bi-clock-history text-info me-1"></i> Takes 10 Minutes</div>
+            <div><i class="bi bi-shield-lock text-info me-1"></i> No spam, unsubscribe anytime</div>
+          </div>
+        </div>
+
+        <!-- Right Column: Opt-In Card / Dynamic Thank-You View -->
+        <div class="col-lg-5">
+          <div class="optin-card">
+
+            <!-- STATE 1: OPT-IN FORM -->
+            <div id="optinFormView">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="badge bg-dark text-info">Instant Delivery</span>
+                <span class="text-muted small">Updated for 2026 AI Search</span>
+              </div>
+
+              <h2 class="h3 fw-bold mb-2">Get the Free Check</h2>
+              <p class="small text-muted mb-4">
+                Enter your details below to receive the 9-page guide, starter prompts, and printable tracker immediately.
+              </p>
+
+              <form id="leadCaptureForm" name="ai-visibility-check" method="POST" data-netlify="true" netlify data-netlify-honeypot="bot-field" onsubmit="handleOptinSubmit(event)">
+                <!-- Netlify Form Hidden Inputs -->
+                <input type="hidden" name="form-name" value="ai-visibility-check">
+                <p class="d-none">
+                  <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+                </p>
+
+                <div class="mb-3">
+                  <label for="firstNameInput" class="form-label small fw-semibold text-muted">First Name</label>
+                  <input type="text" class="form-control" id="firstNameInput" name="firstName" placeholder="e.g. Alex" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="emailInput" class="form-label small fw-semibold text-muted">Work Email Address</label>
+                  <input type="email" class="form-control" id="emailInput" name="email" placeholder="name@company.com" required>
+                </div>
+
+                <button type="submit" class="btn btn-ds-primary w-100 py-3 fw-bold fs-6" id="submitBtn">
+                  <i class="fa-solid fa-paper-plane me-2"></i> Send me the free check
+                </button>
+
+                <!-- Microcopy under form -->
+                <p class="text-secondary small text-center mt-3 mb-0" style="font-size: 0.82rem; line-height: 1.5;">
+                  <i class="bi bi-envelope-check me-1"></i> Free PDF, 9 pages. We'll email it to you, plus two short follow-ups. Unsubscribe anytime.
+                </p>
+              </form>
+            </div>
+
+            <!-- STATE 2: THANK-YOU VIEW (Revealed upon form submission) -->
+            <div id="thankYouView" class="thank-you-view">
+              <div class="text-center mb-3">
+                <div class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-circle p-3 mb-3" style="width: 60px; height: 60px;">
+                  <i class="bi bi-check2-circle fs-2"></i>
+                </div>
+                <h2 class="h3 fw-bold mb-2">It's on its way. Check your inbox.</h2>
+                <p class="text-muted small">
+                  Your copy of <em>Get Quoted: The 10-Minute AI Visibility Check</em> is heading to <strong id="confirmedEmail" class="text-dark">your inbox</strong> now.
+                </p>
+              </div>
+
+              <div class="alert alert-light border border-secondary border-opacity-25 rounded-3 p-3 mb-4">
+                <div class="small text-muted mb-2">
+                  <i class="bi bi-info-circle text-info me-1"></i> If it isn't there in a few minutes, check your promotions or spam folder, or click below:
+                </div>
+                <a href="#direct-download" class="btn btn-sm btn-ds-primary w-100" id="downloadGuideBtn" onclick="triggerGuideDownload(event)">
+                  <i class="bi bi-download me-1"></i> Download Guide Now (PDF)
+                </a>
+              </div>
+
+              <div class="pt-2 border-top border-secondary border-opacity-25">
+                <h4 class="h6 fw-bold mb-3 text-uppercase letter-spacing-1 text-muted" style="font-size: 0.78rem;">Do this next (10 minutes):</h4>
+                <div class="d-flex flex-column gap-3 mb-3">
+                  <div class="d-flex align-items-start gap-2">
+                    <span class="step-number">1</span>
+                    <div class="small"><strong>Open page 3</strong> and fill in your five starter prompts.</div>
+                  </div>
+                  <div class="d-flex align-items-start gap-2">
+                    <span class="step-number">2</span>
+                    <div class="small"><strong>Print the mini tracker</strong> on page 4.</div>
+                  </div>
+                  <div class="d-flex align-items-start gap-2">
+                    <span class="step-number">3</span>
+                    <div class="small"><strong>Open a private / incognito window</strong> and run your first prompt.</div>
+                  </div>
+                </div>
+
+                <p class="small text-muted mb-3" style="font-size: 0.8rem;">
+                  Feel free to share the PDF unchanged with anyone whose brand AI keeps leaving out.
+                </p>
+
+                <div class="bg-light p-2 rounded small text-center text-muted" style="font-size: 0.8rem;">
+                  Questions? Email <a href="mailto:digispher25@gmail.com" class="text-info fw-bold">digispher25@gmail.com</a>
+                </div>
+
+                <div class="text-center mt-3">
+                  <button type="button" class="btn btn-link btn-sm text-secondary text-decoration-none" onclick="resetFormView()">
+                    <i class="bi bi-arrow-counterclockwise me-1"></i> Submit with another email
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       SECTION 1: WHAT'S INSIDE THE 9-PAGE GUIDE
+       ========================================================================= -->
+  <section class="py-5 bg-white border-top border-bottom border-light-subtle" id="whats-inside">
+    <div class="container py-lg-4">
+      <div class="max-w-900 mx-auto text-center mb-5">
+        <span class="badge-pill-soft mb-2">
+          <i class="bi bi-book"></i> Guide Breakdown
+        </span>
+        <h2 class="section-headline mb-3">Everything in the 9-Page Free Check</h2>
+        <p class="lead text-muted mx-auto">
+          No fluff, no bloated theory. Just five starter prompts, a printable tracker, and five actionable fixes designed to take ten minutes.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4">
+          <div class="tracker-card h-100 p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-dark text-info">Pages 1 – 4</span>
+              <i class="bi bi-crosshair text-info fs-4"></i>
+            </div>
+            <h3 class="h4 fw-bold mb-2">5 Prompts & Score Tracker</h3>
+            <p class="small text-muted mb-3">
+              Run 5 starter prompts across 4 AI engines (ChatGPT, Gemini, Perplexity, Google AI Overviews) with a simple 0-40 score.
+            </p>
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2 mb-0">
+              <li><i class="bi bi-check2 text-success me-2"></i>Direct category query prompts</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Comparison queries ("X vs Y")</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Printable single-page mini tracker</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Clear baseline scoring without expensive software</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4">
+          <div class="tracker-card h-100 p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-dark text-info">Pages 5 – 7</span>
+              <i class="bi bi-lightning-charge text-info fs-4"></i>
+            </div>
+            <h3 class="h4 fw-bold mb-2">The Quick 5 Checklist</h3>
+            <p class="small text-muted mb-3">
+              Five immediate, high-impact fixes you can deploy in under an hour to stop AI engines from skipping your site.
+            </p>
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2 mb-0">
+              <li><i class="bi bi-check2 text-success me-2"></i>Allow the correct AI search bots in robots.txt</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Bing Webmaster Tools & IndexNow setup</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Organization Schema with entity linking</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>BLUF (Bottom Line Up Front) extractable text</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4">
+          <div class="tracker-card h-100 p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-dark text-info">Pages 8 – 9</span>
+              <i class="bi bi-patch-check text-info fs-4"></i>
+            </div>
+            <h3 class="h4 fw-bold mb-2">3 AI Myths Debunked</h3>
+            <p class="small text-muted mb-3">
+              Stop wasting engineering hours on bad internet advice. Verified against official Google, OpenAI, and Anthropic docs.
+            </p>
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2 mb-0">
+              <li><i class="bi bi-check2 text-success me-2"></i>The Google-Extended truth for AI Overviews</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>The real limitations of llms.txt files</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Why FAQ schema alone won't get you cited</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>What actually triggers real-time RAG retrieval</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 2: INTERACTIVE 0-40 SCORE SIMULATOR
+       ========================================================================= -->
+  <section class="py-5 bg-light" id="simulator">
+    <div class="container py-lg-4">
+      <div class="row align-items-center g-5">
+        
+        <div class="col-lg-5">
+          <span class="badge-pill-soft mb-2">
+            <i class="bi bi-sliders"></i> Interactive Simulator
+          </span>
+          <h2 class="section-headline mb-3">Try the 0–40 Scoring System</h2>
+          <p class="lead text-muted mb-4">
+            The guide uses a simple, repeatable framework: test 5 high-intent prompts across the 4 major generative search engines.
+          </p>
+          <div class="p-3 bg-white rounded border border-secondary border-opacity-25 mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-bold small text-muted text-uppercase">Your Live Test Score</span>
+              <span class="h3 fw-bold text-primary mb-0"><span id="simScore">0</span> / 40</span>
+            </div>
+            <div class="progress" style="height: 10px;">
+              <div class="progress-bar bg-primary" id="simProgressBar" role="progressbar" style="width: 0%;"></div>
+            </div>
+            <div class="mt-2 small text-muted" id="simScoreVerdict">
+              Click the engines below where your brand is currently mentioned or quoted.
+            </div>
+          </div>
+
+          <a href="#optin" class="btn btn-ds-primary">
+            <i class="fa-solid fa-download me-1"></i> Get the Printable Tracker in the PDF
+          </a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="score-simulator bg-white shadow-sm">
+            <h4 class="h5 fw-bold mb-3">The 5 Starter Prompts from Page 3</h4>
+            
+            <div class="d-flex flex-column gap-3" id="promptItemsContainer">
+              
+              <!-- Prompt 1 -->
+              <div class="p-3 border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div class="fw-bold small">Prompt 1: "What are the top recommended [category/software] tools in 2026?"</div>
+                  <span class="badge bg-light text-muted">Direct Category</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-chat-dots"></i> ChatGPT</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-gemini"></i> Gemini</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-search"></i> Perplexity</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-google"></i> Google AI Overviews</span>
+                </div>
+              </div>
+
+              <!-- Prompt 2 -->
+              <div class="p-3 border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div class="fw-bold small">Prompt 2: "Compare [Your Brand] vs [Main Competitor] for [Primary Use Case]"</div>
+                  <span class="badge bg-light text-muted">Head-to-Head</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-chat-dots"></i> ChatGPT</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-gemini"></i> Gemini</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-search"></i> Perplexity</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-google"></i> Google AI Overviews</span>
+                </div>
+              </div>
+
+              <!-- Prompt 3 -->
+              <div class="p-3 border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div class="fw-bold small">Prompt 3: "Who provides the best solution for [specific pain point your buyers face]?"</div>
+                  <span class="badge bg-light text-muted">Problem-Solution</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-chat-dots"></i> ChatGPT</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-gemini"></i> Gemini</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-search"></i> Perplexity</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-google"></i> Google AI Overviews</span>
+                </div>
+              </div>
+
+              <!-- Prompt 4 -->
+              <div class="p-3 border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div class="fw-bold small">Prompt 4: "What is [Your Brand] and what do they charge for [Service/Product]?"</div>
+                  <span class="badge bg-light text-muted">Brand & Pricing Fact</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-chat-dots"></i> ChatGPT</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-gemini"></i> Gemini</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-search"></i> Perplexity</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-google"></i> Google AI Overviews</span>
+                </div>
+              </div>
+
+              <!-- Prompt 5 -->
+              <div class="p-3 border rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div class="fw-bold small">Prompt 5: "Which [category] companies have the best customer reviews and track record?"</div>
+                  <span class="badge bg-light text-muted">Reputation & Trust</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-chat-dots"></i> ChatGPT</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-gemini"></i> Gemini</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-search"></i> Perplexity</span>
+                  <span class="engine-pill" onclick="toggleEnginePill(this)"><i class="bi bi-google"></i> Google AI Overviews</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="small text-muted mt-3">
+              <i class="bi bi-info-circle me-1"></i> In the real check, you run each prompt twice across incognito windows to measure consistency (20 points per run = 40 total).
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 3: THE QUICK 5 FIXES PREVIEW
+       ========================================================================= -->
+  <section class="py-5 bg-white border-top border-bottom border-light-subtle" id="quick-5">
+    <div class="container py-lg-4">
+      <div class="max-w-900 mx-auto text-center mb-5">
+        <span class="badge-pill-soft mb-2">
+          <i class="bi bi-check-all"></i> Page 5 of the Guide
+        </span>
+        <h2 class="section-headline mb-3">The Quick 5 Checklist Preview</h2>
+        <p class="lead text-muted mx-auto">
+          Before you rewrite all your content, verify these five foundational technical and structural fixes.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Fix 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border p-4 bg-light">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge bg-dark text-info">Fix 01</span>
+              <h3 class="h5 fw-bold mb-0">Allow Search Bots</h3>
+            </div>
+            <p class="small text-muted mb-3">
+              Don't block the crawlers that answer live search queries. Never blanket-ban AI user-agents if you want live citations.
+            </p>
+            <div class="bg-white p-2 rounded border small font-monospace" style="font-size: 0.78rem;">
+              User-agent: OAI-SearchBot<br>
+              Allow: /<br>
+              User-agent: PerplexityBot<br>
+              Allow: /
+            </div>
+          </div>
+        </div>
+
+        <!-- Fix 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border p-4 bg-light">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge bg-dark text-info">Fix 02</span>
+              <h3 class="h5 fw-bold mb-0">Bing Webmaster & IndexNow</h3>
+            </div>
+            <p class="small text-muted mb-3">
+              Copilot and ChatGPT search rely heavily on Bing's live index. Connect your domain to Bing Webmaster Tools and enable IndexNow for instant indexing.
+            </p>
+            <div class="small text-muted">
+              <i class="bi bi-arrow-right-short text-info"></i> Fast-tracks retrieval for ChatGPT live browsing.
+            </div>
+          </div>
+        </div>
+
+        <!-- Fix 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border p-4 bg-light">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge bg-dark text-info">Fix 03</span>
+              <h3 class="h5 fw-bold mb-0">Organization Schema</h3>
+            </div>
+            <p class="small text-muted mb-3">
+              Give LLMs an unambiguous machine-readable entity declaration with Schema.org JSON-LD and <code>sameAs</code> links to Wikidata and Crunchbase.
+            </p>
+            <div class="small text-muted">
+              <i class="bi bi-arrow-right-short text-info"></i> Bridges your brand entity to existing knowledge graphs.
+            </div>
+          </div>
+        </div>
+
+        <!-- Fix 4 -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100 border p-4 bg-light">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge bg-dark text-info">Fix 04</span>
+              <h3 class="h5 fw-bold mb-0">BLUF Summaries (Bottom Line Up Front)</h3>
+            </div>
+            <p class="small text-muted mb-2">
+              AI engines parse and chunk text in semantic blocks. Put the direct answer in the first 40–60 words of each section instead of burying it under narrative fluff.
+            </p>
+            <div class="small text-muted">
+              <i class="bi bi-check2 text-success me-1"></i> Enables automated synthesis and extraction without confusing the RAG parser.
+            </div>
+          </div>
+        </div>
+
+        <!-- Fix 5 -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100 border p-4 bg-light">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge bg-dark text-info">Fix 05</span>
+              <h3 class="h5 fw-bold mb-0">One Consistent Brand Description</h3>
+            </div>
+            <p class="small text-muted mb-2">
+              If your homepage says "all-in-one AI platform", your LinkedIn says "creative boutique", and your footer says "marketing consultancy", LLMs hallucinate or skip you.
+            </p>
+            <div class="small text-muted">
+              <i class="bi bi-check2 text-success me-1"></i> Standardize one 25-word canonical statement everywhere.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 4: SKIP THE MYTHS (Pages 8-9)
+       ========================================================================= -->
+  <section class="py-5 bg-light" id="myths">
+    <div class="container py-lg-4">
+      <div class="max-w-900 mx-auto text-center mb-5">
+        <span class="badge-pill-soft mb-2">
+          <i class="bi bi-exclamation-triangle"></i> Checked Against Google Docs
+        </span>
+        <h2 class="section-headline mb-3">Skip the Myths: 3 Claims Checked</h2>
+        <p class="lead text-muted mx-auto">
+          Don't waste engineering cycles chasing unverified hacks. Here is what official search engine documentation actually says.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Myth 1 -->
+        <div class="col-lg-4">
+          <div class="myth-card">
+            <span class="badge bg-danger mb-3">Myth 1: Google-Extended</span>
+            <h3 class="h5 fw-bold mb-2">"Blocking Google-Extended removes you from AI Overviews."</h3>
+            <p class="small text-muted mb-3">
+              <strong>The Reality:</strong> Google-Extended is only used for training Gemini and Vertex AI foundation models. Google AI Overviews use the standard <strong>Googlebot</strong> crawler. Blocking Googlebot removes you from Google Search entirely.
+            </p>
+            <div class="text-secondary small border-top pt-2" style="font-size: 0.78rem;">
+              <i class="bi bi-journal-text text-info me-1"></i> Source: Google Search Central Documentation
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth 2 -->
+        <div class="col-lg-4">
+          <div class="myth-card">
+            <span class="badge bg-danger mb-3">Myth 2: llms.txt</span>
+            <h3 class="h5 fw-bold mb-2">"Adding an llms.txt file is all you need for AI SEO."</h3>
+            <p class="small text-muted mb-3">
+              <strong>The Reality:</strong> While helpful for LLM developer tools and markdown readers, major AI search engines do not currently use llms.txt as a replacement for standard HTML indexing and schema.
+            </p>
+            <div class="text-secondary small border-top pt-2" style="font-size: 0.78rem;">
+              <i class="bi bi-journal-text text-info me-1"></i> Source: OpenAI & Perplexity Crawler Protocols
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth 3 -->
+        <div class="col-lg-4">
+          <div class="myth-card">
+            <span class="badge bg-danger mb-3">Myth 3: FAQ Schema</span>
+            <h3 class="h5 fw-bold mb-2">"FAQ schema guarantees citations in AI answers."</h3>
+            <p class="small text-muted mb-3">
+              <strong>The Reality:</strong> FAQ markup alone does not establish topical authority or semantic confidence. If the content lacks entity co-occurrence and third-party citation consensus, LLMs will synthesize competitors instead.
+            </p>
+            <div class="text-secondary small border-top pt-2" style="font-size: 0.78rem;">
+              <i class="bi bi-journal-text text-info me-1"></i> Source: Stanford GEO Research Benchmark
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 5: WELCOME SEQUENCE & FULL GEO PLAYBOOK BRIDGE
+       ========================================================================= -->
+  <section class="py-5 bg-white border-top" id="whats-next">
+    <div class="container py-lg-4">
+      <div class="row align-items-center g-5">
+        
+        <div class="col-lg-6">
+          <span class="badge-pill-soft mb-2">
+            <i class="bi bi-envelope-open"></i> What Happens After Sign Up
+          </span>
+          <h2 class="section-headline mb-3">Your 3-Part Follow-Up Sequence</h2>
+          <p class="lead text-muted mb-4">
+            We respect your inbox. You'll receive the free PDF immediately, followed by two short, practical emails:
+          </p>
+
+          <div class="d-flex flex-column gap-3">
+            <div class="p-3 border rounded bg-light">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <strong class="text-dark small">Email 1 (Sent Immediately)</strong>
+                <span class="badge bg-white text-muted border">Immediate</span>
+              </div>
+              <div class="small fw-semibold text-primary mb-1">"Your 10-Minute AI Visibility Check is here"</div>
+              <div class="text-muted small">Delivers your 9-page PDF download link and the quick 3-step action checklist.</div>
+            </div>
+
+            <div class="p-3 border rounded bg-light">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <strong class="text-dark small">Email 2 (Sent Day 2)</strong>
+                <span class="badge bg-white text-muted border">Day 2</span>
+              </div>
+              <div class="small fw-semibold text-primary mb-1">"The robots.txt line that can hide you from AI search"</div>
+              <div class="text-muted small">A two-minute security/CDN audit to ensure bot-blocking rules aren't hiding your brand.</div>
+            </div>
+
+            <div class="p-3 border rounded bg-light">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <strong class="text-dark small">Email 3 (Sent Day 5)</strong>
+                <span class="badge bg-white text-muted border">Day 5</span>
+              </div>
+              <div class="small fw-semibold text-primary mb-1">"What to do after your first score"</div>
+              <div class="text-muted small">How to turn a one-off test into a monthly tracking system with the full Get Quoted bundle.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full Bundle Upsell Card -->
+        <div class="col-lg-6">
+          <div class="p-4 p-lg-5 rounded border border-2 border-primary bg-light shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-primary text-white">Full Upgrade Available</span>
+              <span class="fw-bold fs-5 text-dark">$19.99</span>
+            </div>
+
+            <h3 class="h4 fw-bold mb-2">Ready to turn your check into a monthly system?</h3>
+            <p class="small text-muted mb-4">
+              The free guide shows where you stand. The complete <strong>Get Quoted GEO Playbook</strong> gives you the full implementation toolkit:
+            </p>
+
+            <ul class="list-unstyled small text-muted d-flex flex-column gap-2 mb-4">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>The GEO Playbook (41 pages):</strong> 5 deep chapters on technical setup, citation architecture & tracking.</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>5 SOP Checklists:</strong> Spreadsheet with owners/dates, fillable PDF, and Notion import.</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Prompt Tracker Spreadsheet & Dashboard:</strong> Share of model, citation rates, and KPIs.</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Technical Kit:</strong> robots.txt, llms.txt templates, and 6 JSON-LD snippets.</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Content Templates:</strong> comparison page, brand fact sheet, and outreach emails.</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Quarterly Re-Audit Worksheet:</strong> spot model drift across LLM release cycles.</li>
+            </ul>
+
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <a href="geo-playbook.html" class="btn btn-ds-primary flex-grow-1">
+                <i class="fa-solid fa-book-open me-2"></i> View Full GEO Playbook ($19.99)
+              </a>
+              <a href="#optin" class="btn btn-ds-outline">
+                Start with Free Check
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer-ds border-top py-5 bg-white">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="bi bi-cpu-fill text-info fs-4"></i>
+            <span class="h4 text-dark mb-0 fw-bold">DigiSpher</span>
+          </div>
+          <p class="small text-muted mb-3">
+            Transforming businesses through modern web engineering, offline privacy software, and AI search optimization.
+          </p>
+          <div class="text-secondary small">
+            © 2026 DigiSpher. All rights reserved.
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <h5 class="text-dark small fw-bold text-uppercase mb-3">Products</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="geo-playbook.html" class="text-info fw-bold">GEO Playbook</a></li>
+            <li><a href="ai-visibility-check.html" class="text-dark fw-bold">Free AI Check</a></li>
+            <li><a href="dropspher.html">DropSpher App</a></li>
+            <li><a href="ds-emr.html">DigiSpherEMR V2</a></li>
+            <li><a href="software-pricing.html">Pricing Playbook</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <h5 class="text-dark small fw-bold text-uppercase mb-3">Resources</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#whats-inside">What's in the Guide</a></li>
+            <li><a href="#simulator">Score Calculator</a></li>
+            <li><a href="#quick-5">Quick 5 Fixes</a></li>
+            <li><a href="#myths">AI Search Myths</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-dark small fw-bold text-uppercase mb-3">Contact & Support</h5>
+          <p class="small text-muted mb-1">
+            <i class="bi bi-envelope text-info me-2"></i> digispher25@gmail.com
+          </p>
+          <p class="small text-muted mb-3">
+            <i class="bi bi-geo-alt text-info me-2"></i> Tunis, Tunisia · Global Operations
+          </p>
+          <a href="index.html" class="btn btn-sm btn-ds-outline">
+            <i class="fa-solid fa-grip me-1"></i> View All DigiSpher Products
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Interactive Script for Form, Simulator & Download -->
+  <script>
+    // 1. Lead Capture Form Handler
+    function handleOptinSubmit(e) {
+      e.preventDefault();
+      const nameInput = document.getElementById('firstNameInput');
+      const emailInput = document.getElementById('emailInput');
+      const submitBtn = document.getElementById('submitBtn');
+
+      const name = nameInput.value.trim() || 'there';
+      const email = emailInput.value.trim();
+
+      if (!email) return;
+
+      // Loading UI
+      const originalText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending your guide...';
+
+      // Send form submission to Netlify Forms endpoint
+      const form = document.getElementById('leadCaptureForm');
+      const formData = new FormData(form);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      }).catch(err => {
+        // Fallback gracefully if running locally
+        console.log('Netlify submission local fallback:', err);
+      });
+
+      setTimeout(() => {
+        // Update Thank-You View
+        document.getElementById('confirmedEmail').textContent = email;
+        document.getElementById('optinFormView').style.display = 'none';
+        document.getElementById('thankYouView').classList.add('active');
+
+        // Smooth scroll to top of card if needed
+        document.getElementById('optin').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // Save in localStorage for persistence
+        try {
+          localStorage.setItem('digispher_free_lead', JSON.stringify({ name, email, date: new Date().toISOString() }));
+        } catch(err) {}
+
+        // Restore button state
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }, 700);
+    }
+
+    // 2. Reset back to Opt-In Form View
+    function resetFormView() {
+      document.getElementById('thankYouView').classList.remove('active');
+      document.getElementById('optinFormView').style.display = 'block';
+    }
+
+    // 3. Trigger Sample Guide Download / Preview
+    function triggerGuideDownload(e) {
+      e.preventDefault();
+      // Generate clean printable markdown/text representation for immediate value
+      const guideContent = `# Get Quoted: The 10-Minute AI Visibility Check (Free)
+DigiSpher Product Suite • Contact: digispher25@gmail.com
+
+============================================================
+PAGE 3: THE FIVE STARTER PROMPTS
+============================================================
+Prompt 1: "What are the top recommended [category] tools in 2026?"
+Prompt 2: "Compare [Your Brand] vs [Main Competitor] for [Use Case]"
+Prompt 3: "Who provides the best solution for [Buyer Pain Point]?"
+Prompt 4: "What is [Your Brand] and what do they charge for [Service]?"
+Prompt 5: "Which [category] companies have the best customer reviews?"
+
+============================================================
+PAGE 4: THE 0-40 MINI TRACKER
+============================================================
+Engines tested: ChatGPT (OpenAI), Gemini (Google), Perplexity, Google AI Overviews.
+Run 1 (Incognito): Rate 0 to 20
+Run 2 (Incognito): Rate 0 to 20
+Total Score: / 40 points
+
+============================================================
+PAGES 5-7: THE QUICK 5 CHECKLIST
+============================================================
+1. Robots.txt: Do not disallow OAI-SearchBot, PerplexityBot, Claude-SearchBot, Googlebot, Bingbot.
+2. Bing Webmaster Tools & IndexNow: Submit your sitemap and enable instant ping.
+3. Organization Schema: Add JSON-LD with sameAs entity links (Wikidata, Crunchbase, LinkedIn).
+4. BLUF Content Structure: Put the 40-word core answer at the top of each page.
+5. Consistent Brand Definition: Use identical phrasing for your core offering everywhere.
+
+============================================================
+PAGES 8-9: 3 COMMON AI MYTHS DEBUNKED
+============================================================
+Myth 1: Google-Extended controls AI Overviews. (FALSE: AI Overviews use Googlebot).
+Myth 2: llms.txt replaces SEO. (FALSE: Major engines crawl HTML and schema).
+Myth 3: FAQ Schema alone guarantees citations. (FALSE: Consensus authority is required).
+
+Need the full 41-page GEO Playbook & SOP bundle?
+Visit: https://digispher.online or see geo-playbook.html
+`;
+
+      const blob = new Blob([guideContent], { type: 'text/markdown;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', 'Get-Quoted-10-Minute-AI-Visibility-Check.md');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // 4. Interactive Score Calculator
+    function toggleEnginePill(pill) {
+      pill.classList.toggle('checked');
+      updateSimulatorScore();
+    }
+
+    function updateSimulatorScore() {
+      const checkedPills = document.querySelectorAll('.engine-pill.checked').length;
+      // 5 prompts x 4 engines = 20 points per run. Multiply by 2 for the two-run 40-point framework
+      const score = checkedPills * 2;
+      const simScoreEl = document.getElementById('simScore');
+      const simProgressBar = document.getElementById('simProgressBar');
+      const verdictEl = document.getElementById('simScoreVerdict');
+
+      simScoreEl.textContent = score;
+      const pct = Math.min(100, Math.round((score / 40) * 100));
+      simProgressBar.style.width = pct + '%';
+
+      if (score === 0) {
+        verdictEl.textContent = "Click the engines above where your brand is currently mentioned or quoted.";
+        simProgressBar.className = "progress-bar bg-secondary";
+      } else if (score < 15) {
+        verdictEl.innerHTML = `<span class="text-danger fw-bold">Critical Visibility Gap (${score}/40):</span> AI engines are skipping your brand in favor of competitors. Apply the Quick 5 fixes immediately.`;
+        simProgressBar.className = "progress-bar bg-danger";
+      } else if (score < 30) {
+        verdictEl.innerHTML = `<span class="text-warning fw-bold">Partial Citations (${score}/40):</span> You are mentioned occasionally, but inconsistency in your brand entity causes model drift.`;
+        simProgressBar.className = "progress-bar bg-warning";
+      } else {
+        verdictEl.innerHTML = `<span class="text-success fw-bold">Strong AI Footprint (${score}/40):</span> Excellent citation consistency! Maintain your advantage with quarterly re-audits.`;
+        simProgressBar.className = "progress-bar bg-success";
+      }
+    }
+  </script>
+</body>
+</html>
